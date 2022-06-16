@@ -7,8 +7,8 @@
     } ${comments.length > 1 ? 'Коммент.' : 'Коммент.'}`"
     item-layout="horizontal"
   >
-    <template #renderItem="{ item }">
-      <a-list-item :key="item">
+    <template #renderItem="{ item, index }">
+      <a-list-item :key="item" :id="'comment_' + (1 + index)">
         <a-comment
           :author="item.author"
           :avatar="item.avatar"

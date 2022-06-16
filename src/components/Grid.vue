@@ -42,9 +42,9 @@ export default defineComponent({
       :xl="6"
     >
       <span class="line-clamp" style="display: flex; justify-content: center">
-        <a :href="'/post/' + (+index + 1) + '/comment/0'">
+        <router-link :to="'/post/' + (+index + 1) + '/comment/0'">
           <Card :id_col="1 + index" detailed="0" />
-        </a>
+        </router-link>
       </span>
     </a-col>
   </a-row>

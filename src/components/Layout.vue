@@ -1,7 +1,7 @@
 <template>
   <a-layout class="layout">
     <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
-      <a href="/">ГЛАВНАЯ</a>
+      <router-link to="/"> ГЛАВНАЯ </router-link>
     </a-layout-header>
 
     <a-layout-content style="text-align: center">
